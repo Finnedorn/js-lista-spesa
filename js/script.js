@@ -73,7 +73,7 @@ for(i = 0; i < list.lenght; i++) {
 
 
 // oppure (metodo stefano)
-/*
+
 let list = [];
 let loop = true;
 
@@ -83,30 +83,20 @@ while (loop) {
         loop = false;
     }
     list.push(item);
-}
-
-const listEl = document.getElementById('list');
-for(i = 0; i < list.lenght; i++) {
-    const listItemEl = document.createElement('li');
-    listItemEl.innerHTML = list[i];
-    listEL.appendChild(listItemEl);
+    console.log(loop, list);
 };
-*/
 
-//oppure 
+const listEl = document.getElementById('result');
+listEl.innerHTML = `Ecco la tua lista della spesa ${list}`;
 
 
-let list = [];
-let item = '';
+    
 
-while (item !== 'stop') {
-    product = prompt('Aggiungi un elemento alla lista, se hai finito scrivi "stop"');
-    product = product.toLocaleLowerCase().trim();
-    if (product !== 'stop' && product !== '') {
-        console.log (product);
-        list.push (product);
-    }
-};
+
+
+
+
+
 
 
 
