@@ -73,7 +73,7 @@ for(i = 0; i < list.lenght; i++) {
 
 
 // oppure (metodo stefano)
-
+/*
 let list = [];
 let loop = true;
 
@@ -91,5 +91,22 @@ for(i = 0; i < list.lenght; i++) {
     listItemEl.innerHTML = list[i];
     listEL.appendChild(listItemEl);
 };
+*/
+
+//oppure 
+
+
+let list = [];
+let item = '';
+
+while (item !== 'stop') {
+    product = prompt('Aggiungi un elemento alla lista, se hai finito scrivi "stop"');
+    product = product.toLocaleLowerCase().trim();
+    if (product !== 'stop' && product !== '') {
+        console.log (product);
+        list.push (product);
+    }
+};
+
 
 
